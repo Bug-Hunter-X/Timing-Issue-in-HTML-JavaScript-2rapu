@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden if JavaScript is enabled.
+  </div>
+  <script>
+    //This script attempts to change the display style of the div, but it won't work if the script runs before the div is fully loaded.
+    document.getElementById("myDiv").style.display = "none";
+  </script>
+</body>
+</html>
