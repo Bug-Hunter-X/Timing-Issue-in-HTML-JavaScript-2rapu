@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden if JavaScript is enabled.
+  </div>
+  <script>
+    //This script uses DOMContentLoaded to ensure the div exists before hiding it
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("myDiv").style.display = "none";
+    });
+  </script>
+</body>
+</html>
